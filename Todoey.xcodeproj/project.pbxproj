@@ -13,8 +13,9 @@
 		AC9D61812044195500C9B174 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9D617F2044195500C9B174 /* Main.storyboard */; };
 		AC9D61832044195500C9B174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9D61822044195500C9B174 /* Assets.xcassets */; };
 		AC9D61862044195500C9B174 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9D61842044195500C9B174 /* LaunchScreen.storyboard */; };
-		AC9D61D72046AFD900C9B174 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC9D61D52046AFD900C9B174 /* DataModel.xcdatamodeld */; };
 		AC9D61D92046D8DC00C9B174 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9D61D82046D8DC00C9B174 /* CategoryViewController.swift */; };
+		ACD75ABE2047FB6A009292B9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD75ABD2047FB6A009292B9 /* Item.swift */; };
+		ACD75AC02047FB7C009292B9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD75ABF2047FB7C009292B9 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +28,9 @@
 		AC9D61822044195500C9B174 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC9D61852044195500C9B174 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC9D61872044195500C9B174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC9D61D62046AFD900C9B174 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		AC9D61D82046D8DC00C9B174 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		ACD75ABD2047FB6A009292B9 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		ACD75ABF2047FB7C009292B9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		FE5B437F790D62826A84937F /* Pods-Todoey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoey.release.xcconfig"; path = "Pods/Target Support Files/Pods-Todoey/Pods-Todoey.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +80,8 @@
 		AC9D618F2046894300C9B174 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				AC9D61D52046AFD900C9B174 /* DataModel.xcdatamodeld */,
+				ACD75ABD2047FB6A009292B9 /* Item.swift */,
+				ACD75ABF2047FB7C009292B9 /* Category.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -257,10 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACD75ABE2047FB6A009292B9 /* Item.swift in Sources */,
 				AC9D61D92046D8DC00C9B174 /* CategoryViewController.swift in Sources */,
 				AC9D617E2044195500C9B174 /* TodoListViewController.swift in Sources */,
-				AC9D61D72046AFD900C9B174 /* DataModel.xcdatamodeld in Sources */,
 				AC9D617C2044195500C9B174 /* AppDelegate.swift in Sources */,
+				ACD75AC02047FB7C009292B9 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,19 +449,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		AC9D61D52046AFD900C9B174 /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				AC9D61D62046AFD900C9B174 /* DataModel.xcdatamodel */,
-			);
-			currentVersion = AC9D61D62046AFD900C9B174 /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = AC9D61702044195500C9B174 /* Project object */;
 }
